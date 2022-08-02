@@ -1,0 +1,12 @@
+dist
+out
+node_modules
+.vscode
+*.vsix
+*.yml
+*.md
+runtimes
+web/build
+web/public
+vsc-extension-quickstart.md
+tsconfig.json

@@ -1,0 +1,7 @@
+{
+	"displayName": "Extension Starter",
+	"description": "VSCode extension template of webview using React(CRA)",
+	"contributes.activitybar.title": "Extension Starter",
+	"contributes.commands.welcome": "Extension Starter: Welcome",
+	"welcomeMsg": "Hello, welcome to my extension starter!"
+}

@@ -1,0 +1,82 @@
+{
+	"name": "vscode-extension-react-starter",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.69.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"React"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "my-extension",
+					"title": "%contributes.activitybar.title%",
+					"icon": "assets/icon.svg"
+				}
+			]
+		},
+		"views": {
+			"my-extension": [
+				{
+					"type": "webview",
+					"id": "starter.overview",
+					"name": ""
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "starter.welcome",
+				"title": "%contributes.commands.welcome%"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run build-webview && yarn run package",
+		"build-webview": "cd web && yarn run build ",
+		"postinstall": "cd web && yarn",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./",
+		"test-watch": "tsc -watch -p ./",
+		"pretest": "yarn run test-compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.69.0",
+		"@typescript-eslint/eslint-plugin": "^4.26.0",
+		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"ts-loader": "^9.2.2",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.0"
+	},
+	"dependencies": {
+		"@sap-devx/webview-rpc": "^0.4.1",
+		"vscode-nls-i18n": "^0.2.4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LinLzis/vscode-extension-react-starter.git"
+	}
+}
