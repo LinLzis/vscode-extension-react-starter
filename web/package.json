@@ -14,6 +14,7 @@
     "antd": "^4.22.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intl": "^6.0.5",
     "react-scripts": "5.0.1",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"

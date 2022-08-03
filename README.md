@@ -12,6 +12,7 @@ VSCode extension template of webview using React(CRA) 🚀
 -   [x] [React](https://reactjs.org/)
 -   [x] [Create React App](https://github.com/facebook/create-react-app)
 -   [x] [TypeScript](https://www.typescriptlang.org/)
+-   [x] [React Intl](https://formatjs.io/docs/react-intl/) React i18n library
 -   [x] [Ant Design](https://ant.design/components/overview-cn/) Ant Design with React
 -   [x] [webview-rpc](https://vitejs.dev/) Communication tool for VSCode extension with its webviews
 -   [x] [vscode-nls-i18n](https://github.com/axetroy/vscode-nls-i18n) VSCode library for supporting i18n
