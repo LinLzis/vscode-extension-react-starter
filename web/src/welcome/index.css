@@ -1,0 +1,8 @@
+@import '~antd/dist/antd.css';
+
+html,
+body {
+    /* background-color: var(--vscode-background); */
+    color: var(--vscode-foreground);
+    height: auto;
+}

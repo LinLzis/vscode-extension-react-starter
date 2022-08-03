@@ -3,5 +3,6 @@
 	"description": "VSCode extension template of webview using React(CRA)",
 	"contributes.activitybar.title": "Extension Starter",
 	"contributes.commands.welcome": "Extension Starter: Welcome",
+	"contributes.commands.web": "Extension Starter: Web Panel",
 	"welcomeMsg": "Hello, welcome to my extension starter!"
 }

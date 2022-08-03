@@ -3,5 +3,6 @@
 	"description": "基于 CRA 使用 React 开发 VSCode 插件 webview ",
 	"contributes.activitybar.title": "插件模板项目",
 	"contributes.commands.welcome": "插件模板项目: 欢迎",
+	"contributes.commands.web": "插件模板项目: Web 面板",
 	"welcomeMsg": "您好，欢迎使用我的插件模板项目！"
 }

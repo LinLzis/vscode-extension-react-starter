@@ -39,6 +39,10 @@
 			{
 				"command": "starter.welcome",
 				"title": "%contributes.commands.welcome%"
+			},
+			{
+				"command": "starter.web",
+				"title": "%contributes.commands.web%"
 			}
 		]
 	},
@@ -46,14 +50,15 @@
 		"vscode:prepublish": "yarn run build-webview && yarn run package",
 		"build-webview": "cd web && yarn run build ",
 		"postinstall": "cd web && yarn",
-		"compile": "webpack",
 		"watch": "webpack --watch",
-		"package": "webpack --mode production --devtool hidden-source-map",
+		"package": "webpack --mode production",
+		"compile": "webpack --mode development",
 		"test-compile": "tsc -p ./",
 		"test-watch": "tsc -watch -p ./",
 		"pretest": "yarn run test-compile && yarn run lint",
 		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./out/test/runTest.js",
+		"lint:prettier": "prettier --write ./"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.3",

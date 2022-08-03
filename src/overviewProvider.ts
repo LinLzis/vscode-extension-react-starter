@@ -53,8 +53,8 @@ export default class OverviewProvider implements vscode.WebviewViewProvider {
         const manifest = __non_webpack_require__(
             path.join(this._context.extensionPath, 'web', 'build', 'asset-manifest.json')
         );
-        const mainScript = manifest.files['main.js'];
-        const mainStyle = manifest.files['main.css'];
+        const mainScript = manifest['index.js'];
+        const mainStyle = manifest['index.css'];
 
         const scriptPathOnDisk = vscode.Uri.file(path.join(this._context.extensionPath, 'web', 'build', mainScript));
         const scriptUri = scriptPathOnDisk.with({ scheme: 'vscode-resource' });
