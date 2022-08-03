@@ -18,6 +18,15 @@ VSCode extension template of webview using React(CRA) 🚀
 -   [x] [ESLint](https://eslint.org/)
 -   [x] [Prettier](https://prettier.io/)
 
+## Multiple webivew entry
+If your extension have multiple webview provider, need to build multiple js&css, so that provid the `multi-entry` branch to handle this case. 
+
+> This branch modifies the build configuration of CRA through the `eject` command.
+
+```bash
+git checkout -b multi-entry origin/multi-entry
+```
+
 ## Start
 
 ```bash
