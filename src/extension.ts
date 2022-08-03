@@ -12,10 +12,11 @@ export function activate(context: vscode.ExtensionContext) {
         })
     );
 
-    let disposable = vscode.commands.registerCommand('starter.welcome', () => {
-        vscode.window.showInformationMessage(localize('welcomeMsg'));
-    });
-    context.subscriptions.push(disposable);
+    context.subscriptions.push(
+        vscode.commands.registerCommand('starter.welcome', () => {
+            vscode.window.showInformationMessage(localize('welcomeMsg'));
+        })
+    );
 }
 
 export function deactivate() {}

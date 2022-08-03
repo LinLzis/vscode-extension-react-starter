@@ -35,7 +35,7 @@ export default class OverviewProvider implements vscode.WebviewViewProvider {
         openWebLink: (link: string) => {
             vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(link));
         },
-        showAlert: (type: 'info' | 'error' | 'unkonwn', msg: string) => {
+        showAlert: (type: 'info' | 'error', msg: string) => {
             if (type === 'info') {
                 vscode.window.showInformationMessage(msg);
             } else {
