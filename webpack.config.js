@@ -3,6 +3,8 @@
 'use strict';
 
 const path = require('path');
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const TerserPlugin = require("terser-webpack-plugin");
 
 /**@type {import('webpack').Configuration}*/
 const config = {
@@ -37,6 +39,10 @@ const config = {
         ]
       }
     ]
-  }
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
 };
 module.exports = config;
