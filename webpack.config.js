@@ -33,12 +33,6 @@ const config = {
         use: [
           {
             loader: 'ts-loader'
-          },
-		  {
-            loader: 'vscode-nls-dev/lib/webpack-loader',
-            options: {
-              base: path.join(__dirname, 'src')
-            }
           }
         ]
       }
