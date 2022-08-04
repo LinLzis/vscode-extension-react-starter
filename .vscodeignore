@@ -5,8 +5,10 @@ node_modules/**
 src/**
 .gitignore
 .yarnrc
+.vsix
 vsc-extension-quickstart.md
 **/tsconfig.json
 **/.eslintrc.json
 **/*.map
 **/*.ts
+web/node_modules/**
